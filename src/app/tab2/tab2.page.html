@@ -1,0 +1,45 @@
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input label="Primer número"
+               placeholder="Número 1"
+               [(ngModel)]="num1">
+    </ion-input>
+ </ion-item>
+ <ion-item>
+    <ion-input label="Segundo número"
+               placeholder="Número 2"
+               [(ngModel)]="num2">
+    </ion-input>
+ </ion-item>
+ <ion-item>
+   <ion-label>
+     El resultado es: {{resultado}}
+   </ion-label>
+ </ion-item>
+ <ion-button color="danger"
+             expand="block"
+             (click)="sumar()">
+   Sumar
+ </ion-button>
+ <ion-button color="danger"
+ expand="block"
+ (click)="restar()">
+Restar
+</ion-button>
+<ion-button color="danger"
+             expand="block"
+             (click)="multiplicar()">
+   Multiplicar
+ </ion-button>
+ <ion-button color="danger"
+             expand="block"
+             (click)="dividir()">
+   Dividir
+ </ion-button>
+  <app-explore-container name="Sección 1"></app-explore-container>
+
+  <ion-card-content>
+    <p><strong>Nombre:</strong>Rubi Ruiz Ibarra </p>
+    <p><strong>Docente:</strong>Prof.David Hernández Chessani</p>
+  </ion-card-content>
+</ion-content>

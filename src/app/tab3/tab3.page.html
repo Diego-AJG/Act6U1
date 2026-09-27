@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true">
+  <ion-item>
+     <ion-input label="Número"
+                placeholder="Dame un número"
+                [(ngModel)]="num">
+     </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+       {{salida}}
+    </ion-label>
+  </ion-item>
+  <ion-button color="danger"
+            expand="block"
+            (click)="factorial()">
+  Factorial
+</ion-button>
+<ion-button color="danger"
+            expand="block"
+            (click)="primo()">
+  Primo
+</ion-button>
+ <app-explore-container name="Sección 2"></app-explore-container>
+
+ <ion-card-content>
+  <p><strong>Nombre:</strong>Rubi Ruiz Ibarra</p>
+  <p><strong>Docente:</strong>Prof.David Hernández Chessani</p>
+</ion-card-content>
+</ion-content>
